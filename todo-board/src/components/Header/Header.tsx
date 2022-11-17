@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { SignInButton } from '../SignInButton/SignInButton'
 
 import logoImg from '../../../public/images/logo.svg'
 import styles from "./header.module.scss"
@@ -20,7 +21,7 @@ export function Header() {
           <Link href="/board"> Meu board </Link>
         </nav>
 
-        <button> Entrar com Github </button>
+        <SignInButton />
       </div>
     </header>
   )
